@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		261BC85B1F690790004E7461 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 261BC85A1F690790004E7461 /* main.m */; };
+		261BC85E1F690790004E7461 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 261BC85D1F690790004E7461 /* AppDelegate.m */; };
+		261BC8611F690790004E7461 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261BC8601F690790004E7461 /* ViewController.m */; };
+		261BC8641F690790004E7461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261BC8621F690790004E7461 /* Main.storyboard */; };
+		261BC8661F690790004E7461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261BC8651F690790004E7461 /* Assets.xcassets */; };
+		261BC8691F690790004E7461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261BC8671F690790004E7461 /* LaunchScreen.storyboard */; };
+		261BC8741F690790004E7461 /* ZYP_EventKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 261BC8731F690790004E7461 /* ZYP_EventKitTests.m */; };
+		261BC87F1F690790004E7461 /* ZYP_EventKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 261BC87E1F690790004E7461 /* ZYP_EventKitUITests.m */; };
+		D9BA4DCCDBB0BCCFBD5951A1 /* libPods-ZYP_EventKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED685D8ACD25BC686D19C4F8 /* libPods-ZYP_EventKit.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		261BC8701F690790004E7461 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 261BC84E1F690790004E7461 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 261BC8551F690790004E7461;
+			remoteInfo = ZYP_EventKit;
+		};
+		261BC87B1F690790004E7461 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 261BC84E1F690790004E7461 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 261BC8551F690790004E7461;
+			remoteInfo = ZYP_EventKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		261BC8561F690790004E7461 /* ZYP_EventKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYP_EventKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		261BC85A1F690790004E7461 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		261BC85C1F690790004E7461 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		261BC85D1F690790004E7461 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		261BC85F1F690790004E7461 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		261BC8601F690790004E7461 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		261BC8631F690790004E7461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		261BC8651F690790004E7461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		261BC8681F690790004E7461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		261BC86A1F690790004E7461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		261BC86F1F690790004E7461 /* ZYP_EventKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYP_EventKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		261BC8731F690790004E7461 /* ZYP_EventKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYP_EventKitTests.m; sourceTree = "<group>"; };
+		261BC8751F690790004E7461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		261BC87A1F690790004E7461 /* ZYP_EventKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYP_EventKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		261BC87E1F690790004E7461 /* ZYP_EventKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYP_EventKitUITests.m; sourceTree = "<group>"; };
+		261BC8801F690790004E7461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F6B438092B151C15BBC792C /* Pods-ZYP_EventKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYP_EventKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYP_EventKit/Pods-ZYP_EventKit.debug.xcconfig"; sourceTree = "<group>"; };
+		72A62B420A184ECB14FBAAA8 /* Pods-ZYP_EventKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYP_EventKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYP_EventKit/Pods-ZYP_EventKit.release.xcconfig"; sourceTree = "<group>"; };
+		ED685D8ACD25BC686D19C4F8 /* libPods-ZYP_EventKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZYP_EventKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		261BC8531F690790004E7461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9BA4DCCDBB0BCCFBD5951A1 /* libPods-ZYP_EventKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261BC86C1F690790004E7461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261BC8771F690790004E7461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		261BC84D1F690790004E7461 = {
+			isa = PBXGroup;
+			children = (
+				261BC8581F690790004E7461 /* ZYP_EventKit */,
+				261BC8721F690790004E7461 /* ZYP_EventKitTests */,
+				261BC87D1F690790004E7461 /* ZYP_EventKitUITests */,
+				261BC8571F690790004E7461 /* Products */,
+				A7BD460BAB6EDA269A40288A /* Pods */,
+				2C955281EC3F43C462CAE22A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		261BC8571F690790004E7461 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				261BC8561F690790004E7461 /* ZYP_EventKit.app */,
+				261BC86F1F690790004E7461 /* ZYP_EventKitTests.xctest */,
+				261BC87A1F690790004E7461 /* ZYP_EventKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		261BC8581F690790004E7461 /* ZYP_EventKit */ = {
+			isa = PBXGroup;
+			children = (
+				261BC85C1F690790004E7461 /* AppDelegate.h */,
+				261BC85D1F690790004E7461 /* AppDelegate.m */,
+				261BC85F1F690790004E7461 /* ViewController.h */,
+				261BC8601F690790004E7461 /* ViewController.m */,
+				261BC8621F690790004E7461 /* Main.storyboard */,
+				261BC8651F690790004E7461 /* Assets.xcassets */,
+				261BC8671F690790004E7461 /* LaunchScreen.storyboard */,
+				261BC86A1F690790004E7461 /* Info.plist */,
+				261BC8591F690790004E7461 /* Supporting Files */,
+			);
+			path = ZYP_EventKit;
+			sourceTree = "<group>";
+		};
+		261BC8591F690790004E7461 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				261BC85A1F690790004E7461 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		261BC8721F690790004E7461 /* ZYP_EventKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				261BC8731F690790004E7461 /* ZYP_EventKitTests.m */,
+				261BC8751F690790004E7461 /* Info.plist */,
+			);
+			path = ZYP_EventKitTests;
+			sourceTree = "<group>";
+		};
+		261BC87D1F690790004E7461 /* ZYP_EventKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				261BC87E1F690790004E7461 /* ZYP_EventKitUITests.m */,
+				261BC8801F690790004E7461 /* Info.plist */,
+			);
+			path = ZYP_EventKitUITests;
+			sourceTree = "<group>";
+		};
+		2C955281EC3F43C462CAE22A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED685D8ACD25BC686D19C4F8 /* libPods-ZYP_EventKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7BD460BAB6EDA269A40288A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F6B438092B151C15BBC792C /* Pods-ZYP_EventKit.debug.xcconfig */,
+				72A62B420A184ECB14FBAAA8 /* Pods-ZYP_EventKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		261BC8551F690790004E7461 /* ZYP_EventKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 261BC8831F690790004E7461 /* Build configuration list for PBXNativeTarget "ZYP_EventKit" */;
+			buildPhases = (
+				67CBB9BD9B8955B2EDD87FE1 /* [CP] Check Pods Manifest.lock */,
+				261BC8521F690790004E7461 /* Sources */,
+				261BC8531F690790004E7461 /* Frameworks */,
+				261BC8541F690790004E7461 /* Resources */,
+				B2F3433A3193D63302548702 /* [CP] Embed Pods Frameworks */,
+				1DC790E043435A7A92BA56C6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYP_EventKit;
+			productName = ZYP_EventKit;
+			productReference = 261BC8561F690790004E7461 /* ZYP_EventKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		261BC86E1F690790004E7461 /* ZYP_EventKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 261BC8861F690790004E7461 /* Build configuration list for PBXNativeTarget "ZYP_EventKitTests" */;
+			buildPhases = (
+				261BC86B1F690790004E7461 /* Sources */,
+				261BC86C1F690790004E7461 /* Frameworks */,
+				261BC86D1F690790004E7461 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				261BC8711F690790004E7461 /* PBXTargetDependency */,
+			);
+			name = ZYP_EventKitTests;
+			productName = ZYP_EventKitTests;
+			productReference = 261BC86F1F690790004E7461 /* ZYP_EventKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		261BC8791F690790004E7461 /* ZYP_EventKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 261BC8891F690790004E7461 /* Build configuration list for PBXNativeTarget "ZYP_EventKitUITests" */;
+			buildPhases = (
+				261BC8761F690790004E7461 /* Sources */,
+				261BC8771F690790004E7461 /* Frameworks */,
+				261BC8781F690790004E7461 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				261BC87C1F690790004E7461 /* PBXTargetDependency */,
+			);
+			name = ZYP_EventKitUITests;
+			productName = ZYP_EventKitUITests;
+			productReference = 261BC87A1F690790004E7461 /* ZYP_EventKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		261BC84E1F690790004E7461 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "赵云鹏";
+				TargetAttributes = {
+					261BC8551F690790004E7461 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = K7NEJ69CTA;
+						ProvisioningStyle = Manual;
+					};
+					261BC86E1F690790004E7461 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = K7NEJ69CTA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 261BC8551F690790004E7461;
+					};
+					261BC8791F690790004E7461 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = K7NEJ69CTA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 261BC8551F690790004E7461;
+					};
+				};
+			};
+			buildConfigurationList = 261BC8511F690790004E7461 /* Build configuration list for PBXProject "ZYP_EventKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 261BC84D1F690790004E7461;
+			productRefGroup = 261BC8571F690790004E7461 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				261BC8551F690790004E7461 /* ZYP_EventKit */,
+				261BC86E1F690790004E7461 /* ZYP_EventKitTests */,
+				261BC8791F690790004E7461 /* ZYP_EventKitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		261BC8541F690790004E7461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261BC8691F690790004E7461 /* LaunchScreen.storyboard in Resources */,
+				261BC8661F690790004E7461 /* Assets.xcassets in Resources */,
+				261BC8641F690790004E7461 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261BC86D1F690790004E7461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261BC8781F690790004E7461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DC790E043435A7A92BA56C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZYP_EventKit/Pods-ZYP_EventKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67CBB9BD9B8955B2EDD87FE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B2F3433A3193D63302548702 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZYP_EventKit/Pods-ZYP_EventKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		261BC8521F690790004E7461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261BC8611F690790004E7461 /* ViewController.m in Sources */,
+				261BC85E1F690790004E7461 /* AppDelegate.m in Sources */,
+				261BC85B1F690790004E7461 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261BC86B1F690790004E7461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261BC8741F690790004E7461 /* ZYP_EventKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261BC8761F690790004E7461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261BC87F1F690790004E7461 /* ZYP_EventKitUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		261BC8711F690790004E7461 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 261BC8551F690790004E7461 /* ZYP_EventKit */;
+			targetProxy = 261BC8701F690790004E7461 /* PBXContainerItemProxy */;
+		};
+		261BC87C1F690790004E7461 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 261BC8551F690790004E7461 /* ZYP_EventKit */;
+			targetProxy = 261BC87B1F690790004E7461 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		261BC8621F690790004E7461 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				261BC8631F690790004E7461 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		261BC8671F690790004E7461 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				261BC8681F690790004E7461 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		261BC8811F690790004E7461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		261BC8821F690790004E7461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		261BC8841F690790004E7461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F6B438092B151C15BBC792C /* Pods-ZYP_EventKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K7NEJ69CTA;
+				INFOPLIST_FILE = ZYP_EventKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huomao.test.event.ZYP-EventKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "655e6afc-7c79-4e7d-b3a7-5f937201a21c";
+				PROVISIONING_PROFILE_SPECIFIER = "Huomao Test";
+			};
+			name = Debug;
+		};
+		261BC8851F690790004E7461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72A62B420A184ECB14FBAAA8 /* Pods-ZYP_EventKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ZYP_EventKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huomao.test.event.ZYP-EventKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		261BC8871F690790004E7461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K7NEJ69CTA;
+				INFOPLIST_FILE = ZYP_EventKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huomao.test.event.ZYP-EventKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYP_EventKit.app/ZYP_EventKit";
+			};
+			name = Debug;
+		};
+		261BC8881F690790004E7461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K7NEJ69CTA;
+				INFOPLIST_FILE = ZYP_EventKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huomao.test.event.ZYP-EventKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYP_EventKit.app/ZYP_EventKit";
+			};
+			name = Release;
+		};
+		261BC88A1F690790004E7461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = K7NEJ69CTA;
+				INFOPLIST_FILE = ZYP_EventKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huomao.test.event.ZYP-EventKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZYP_EventKit;
+			};
+			name = Debug;
+		};
+		261BC88B1F690790004E7461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = K7NEJ69CTA;
+				INFOPLIST_FILE = ZYP_EventKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huomao.test.event.ZYP-EventKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZYP_EventKit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		261BC8511F690790004E7461 /* Build configuration list for PBXProject "ZYP_EventKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261BC8811F690790004E7461 /* Debug */,
+				261BC8821F690790004E7461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		261BC8831F690790004E7461 /* Build configuration list for PBXNativeTarget "ZYP_EventKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261BC8841F690790004E7461 /* Debug */,
+				261BC8851F690790004E7461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		261BC8861F690790004E7461 /* Build configuration list for PBXNativeTarget "ZYP_EventKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261BC8871F690790004E7461 /* Debug */,
+				261BC8881F690790004E7461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		261BC8891F690790004E7461 /* Build configuration list for PBXNativeTarget "ZYP_EventKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261BC88A1F690790004E7461 /* Debug */,
+				261BC88B1F690790004E7461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 261BC84E1F690790004E7461 /* Project object */;
+}
