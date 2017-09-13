@@ -21,5 +21,7 @@
 
 // 主角 - 系统事件 (同时导入 EventKit.framework)
 #import <EventKit/EventKit.h>
+#import "EventStore.h"
+
 
 #endif /* ZYP_EventKit_pch */

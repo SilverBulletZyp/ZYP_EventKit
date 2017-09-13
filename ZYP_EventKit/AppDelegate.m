@@ -17,7 +17,40 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    //
+    // 权限获取
+    // EKEntityTypeEvent日历事件 ,   EKEntityTypeReminder提醒事项
+    
+    
+    //获取授权状态
+    EKAuthorizationStatus eventStatus = [EventStore authorizationStatusForEntityType:EKEntityTypeEvent];
+    if (eventStatus ==EKAuthorizationStatusNotDetermined) {
+        if ([[EventStore shareManager]respondsToSelector:@selector(requestAccessToEntityType:completion:)]) {
+            [[EventStore shareManager]requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError * _Nullable error) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (granted) {
+                        NSLog(@"已获得日历权限");
+                    }
+                    else {
+                        
+                        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"calshow:"]];
+                    }
+                });
+            }];
+        }
+    }
+    else if (eventStatus == EKAuthorizationStatusDenied) {
+        NSLog(@"当前日历服务不可用");
+    }
+    else if (eventStatus == EKAuthorizationStatusAuthorized) {
+        NSLog(@"用户已经授权");
+    }
+    else {
+        // EKAuthorizationStatusRestricted
+        NSLog(@"当前日历服务不可用");
+    }
+
+    
+    
     NSArray *array = @[@{@"name":@"01 框架简介",@"vc":@"IntroductionVC"},
                        @{@"name":@"02 阅读和写作日历活动",@"vc":@"ReadingAndWriting"},];
     ZYPNavigationController *nav = [[ZYPNavigationController alloc]initWithTitle:@"系统事件库" vcArray:array];

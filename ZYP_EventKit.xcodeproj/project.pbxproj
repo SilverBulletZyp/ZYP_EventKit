@@ -18,6 +18,10 @@
 		261BC88E1F690E50004E7461 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261BC88D1F690E50004E7461 /* EventKit.framework */; };
 		261BC8921F690F41004E7461 /* IntroductionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 261BC8911F690F41004E7461 /* IntroductionVC.m */; };
 		261BC8961F6918DC004E7461 /* ReadingAndWriting.m in Sources */ = {isa = PBXBuildFile; fileRef = 261BC8951F6918DC004E7461 /* ReadingAndWriting.m */; };
+		261BC89C1F692667004E7461 /* EventStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 261BC89B1F692667004E7461 /* EventStore.m */; };
+		261BC8A41F693652004E7461 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 261BC89F1F693652004E7461 /* NSArray+Log.m */; };
+		261BC8A51F693652004E7461 /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 261BC8A11F693652004E7461 /* NSDictionary+Log.m */; };
+		261BC8A61F693652004E7461 /* NSString+unicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 261BC8A31F693652004E7461 /* NSString+unicode.m */; };
 		D9BA4DCCDBB0BCCFBD5951A1 /* libPods-ZYP_EventKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED685D8ACD25BC686D19C4F8 /* libPods-ZYP_EventKit.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +65,14 @@
 		261BC8911F690F41004E7461 /* IntroductionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionVC.m; sourceTree = "<group>"; };
 		261BC8941F6918DC004E7461 /* ReadingAndWriting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingAndWriting.h; sourceTree = "<group>"; };
 		261BC8951F6918DC004E7461 /* ReadingAndWriting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingAndWriting.m; sourceTree = "<group>"; };
+		261BC89A1F692667004E7461 /* EventStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventStore.h; sourceTree = "<group>"; };
+		261BC89B1F692667004E7461 /* EventStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventStore.m; sourceTree = "<group>"; };
+		261BC89E1F693652004E7461 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		261BC89F1F693652004E7461 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		261BC8A01F693652004E7461 /* NSDictionary+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Log.h"; sourceTree = "<group>"; };
+		261BC8A11F693652004E7461 /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
+		261BC8A21F693652004E7461 /* NSString+unicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+unicode.h"; sourceTree = "<group>"; };
+		261BC8A31F693652004E7461 /* NSString+unicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+unicode.m"; sourceTree = "<group>"; };
 		2F6B438092B151C15BBC792C /* Pods-ZYP_EventKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYP_EventKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYP_EventKit/Pods-ZYP_EventKit.debug.xcconfig"; sourceTree = "<group>"; };
 		72A62B420A184ECB14FBAAA8 /* Pods-ZYP_EventKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYP_EventKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYP_EventKit/Pods-ZYP_EventKit.release.xcconfig"; sourceTree = "<group>"; };
 		ED685D8ACD25BC686D19C4F8 /* libPods-ZYP_EventKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZYP_EventKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +134,9 @@
 				261BC85D1F690790004E7461 /* AppDelegate.m */,
 				261BC85F1F690790004E7461 /* ViewController.h */,
 				261BC8601F690790004E7461 /* ViewController.m */,
+				261BC89A1F692667004E7461 /* EventStore.h */,
+				261BC89B1F692667004E7461 /* EventStore.m */,
+				261BC89D1F693652004E7461 /* CNLog */,
 				261BC88F1F690F2B004E7461 /* 01_Introduction */,
 				261BC8931F6918C1004E7461 /* 02_ReadingAndWritingEvents */,
 				261BC88C1F690A28004E7461 /* ZYP_EventKit.pch */,
@@ -176,6 +191,19 @@
 				261BC8951F6918DC004E7461 /* ReadingAndWriting.m */,
 			);
 			path = 02_ReadingAndWritingEvents;
+			sourceTree = "<group>";
+		};
+		261BC89D1F693652004E7461 /* CNLog */ = {
+			isa = PBXGroup;
+			children = (
+				261BC89E1F693652004E7461 /* NSArray+Log.h */,
+				261BC89F1F693652004E7461 /* NSArray+Log.m */,
+				261BC8A01F693652004E7461 /* NSDictionary+Log.h */,
+				261BC8A11F693652004E7461 /* NSDictionary+Log.m */,
+				261BC8A21F693652004E7461 /* NSString+unicode.h */,
+				261BC8A31F693652004E7461 /* NSString+unicode.m */,
+			);
+			path = CNLog;
 			sourceTree = "<group>";
 		};
 		2C955281EC3F43C462CAE22A /* Frameworks */ = {
@@ -383,10 +411,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				261BC8A61F693652004E7461 /* NSString+unicode.m in Sources */,
 				261BC8611F690790004E7461 /* ViewController.m in Sources */,
+				261BC8A51F693652004E7461 /* NSDictionary+Log.m in Sources */,
+				261BC8A41F693652004E7461 /* NSArray+Log.m in Sources */,
 				261BC85E1F690790004E7461 /* AppDelegate.m in Sources */,
 				261BC8921F690F41004E7461 /* IntroductionVC.m in Sources */,
 				261BC85B1F690790004E7461 /* main.m in Sources */,
+				261BC89C1F692667004E7461 /* EventStore.m in Sources */,
 				261BC8961F6918DC004E7461 /* ReadingAndWriting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
