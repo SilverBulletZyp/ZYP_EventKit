@@ -16,7 +16,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //
+    NSArray *array = @[@{@"name":@"01 框架简介",@"vc":@"IntroductionVC"},
+                       @{@"name":@"02 阅读和写作日历活动",@"vc":@"ReadingAndWriting"},];
+    ZYPNavigationController *nav = [[ZYPNavigationController alloc]initWithTitle:@"系统事件库" vcArray:array];
+    self.window.rootViewController = nav;
+    
     return YES;
 }
 

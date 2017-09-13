@@ -15,6 +15,9 @@
 		261BC8691F690790004E7461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261BC8671F690790004E7461 /* LaunchScreen.storyboard */; };
 		261BC8741F690790004E7461 /* ZYP_EventKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 261BC8731F690790004E7461 /* ZYP_EventKitTests.m */; };
 		261BC87F1F690790004E7461 /* ZYP_EventKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 261BC87E1F690790004E7461 /* ZYP_EventKitUITests.m */; };
+		261BC88E1F690E50004E7461 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261BC88D1F690E50004E7461 /* EventKit.framework */; };
+		261BC8921F690F41004E7461 /* IntroductionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 261BC8911F690F41004E7461 /* IntroductionVC.m */; };
+		261BC8961F6918DC004E7461 /* ReadingAndWriting.m in Sources */ = {isa = PBXBuildFile; fileRef = 261BC8951F6918DC004E7461 /* ReadingAndWriting.m */; };
 		D9BA4DCCDBB0BCCFBD5951A1 /* libPods-ZYP_EventKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED685D8ACD25BC686D19C4F8 /* libPods-ZYP_EventKit.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +56,11 @@
 		261BC87E1F690790004E7461 /* ZYP_EventKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYP_EventKitUITests.m; sourceTree = "<group>"; };
 		261BC8801F690790004E7461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		261BC88C1F690A28004E7461 /* ZYP_EventKit.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYP_EventKit.pch; sourceTree = "<group>"; };
+		261BC88D1F690E50004E7461 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		261BC8901F690F41004E7461 /* IntroductionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionVC.h; sourceTree = "<group>"; };
+		261BC8911F690F41004E7461 /* IntroductionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionVC.m; sourceTree = "<group>"; };
+		261BC8941F6918DC004E7461 /* ReadingAndWriting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingAndWriting.h; sourceTree = "<group>"; };
+		261BC8951F6918DC004E7461 /* ReadingAndWriting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingAndWriting.m; sourceTree = "<group>"; };
 		2F6B438092B151C15BBC792C /* Pods-ZYP_EventKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYP_EventKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYP_EventKit/Pods-ZYP_EventKit.debug.xcconfig"; sourceTree = "<group>"; };
 		72A62B420A184ECB14FBAAA8 /* Pods-ZYP_EventKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYP_EventKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYP_EventKit/Pods-ZYP_EventKit.release.xcconfig"; sourceTree = "<group>"; };
 		ED685D8ACD25BC686D19C4F8 /* libPods-ZYP_EventKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZYP_EventKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				261BC88E1F690E50004E7461 /* EventKit.framework in Frameworks */,
 				D9BA4DCCDBB0BCCFBD5951A1 /* libPods-ZYP_EventKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +122,8 @@
 				261BC85D1F690790004E7461 /* AppDelegate.m */,
 				261BC85F1F690790004E7461 /* ViewController.h */,
 				261BC8601F690790004E7461 /* ViewController.m */,
+				261BC88F1F690F2B004E7461 /* 01_Introduction */,
+				261BC8931F6918C1004E7461 /* 02_ReadingAndWritingEvents */,
 				261BC88C1F690A28004E7461 /* ZYP_EventKit.pch */,
 				261BC8621F690790004E7461 /* Main.storyboard */,
 				261BC8651F690790004E7461 /* Assets.xcassets */,
@@ -149,9 +160,28 @@
 			path = ZYP_EventKitUITests;
 			sourceTree = "<group>";
 		};
+		261BC88F1F690F2B004E7461 /* 01_Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				261BC8901F690F41004E7461 /* IntroductionVC.h */,
+				261BC8911F690F41004E7461 /* IntroductionVC.m */,
+			);
+			path = 01_Introduction;
+			sourceTree = "<group>";
+		};
+		261BC8931F6918C1004E7461 /* 02_ReadingAndWritingEvents */ = {
+			isa = PBXGroup;
+			children = (
+				261BC8941F6918DC004E7461 /* ReadingAndWriting.h */,
+				261BC8951F6918DC004E7461 /* ReadingAndWriting.m */,
+			);
+			path = 02_ReadingAndWritingEvents;
+			sourceTree = "<group>";
+		};
 		2C955281EC3F43C462CAE22A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				261BC88D1F690E50004E7461 /* EventKit.framework */,
 				ED685D8ACD25BC686D19C4F8 /* libPods-ZYP_EventKit.a */,
 			);
 			name = Frameworks;
@@ -355,7 +385,9 @@
 			files = (
 				261BC8611F690790004E7461 /* ViewController.m in Sources */,
 				261BC85E1F690790004E7461 /* AppDelegate.m in Sources */,
+				261BC8921F690F41004E7461 /* IntroductionVC.m in Sources */,
 				261BC85B1F690790004E7461 /* main.m in Sources */,
+				261BC8961F6918DC004E7461 /* ReadingAndWriting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +542,7 @@
 				DEVELOPMENT_TEAM = K7NEJ69CTA;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZYP_EventKit/ZYP_EventKit.pch";
 				INFOPLIST_FILE = ZYP_EventKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.huomao.test.event.ZYP-EventKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -526,6 +559,7 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZYP_EventKit/ZYP_EventKit.pch";
 				INFOPLIST_FILE = ZYP_EventKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.huomao.test.event.ZYP-EventKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,6 +1,6 @@
 project "ZYP_EventKit.xcodeproj"
 
-platform:ios,'10.0'
+platform:ios,'8.0'
 inhibit_all_warnings! # 忽略所有警告
 target 'ZYP_EventKit' do
 
