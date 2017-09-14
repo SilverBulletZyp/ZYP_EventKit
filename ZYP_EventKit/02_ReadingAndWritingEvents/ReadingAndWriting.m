@@ -119,10 +119,10 @@
 //    [event addAlarm:[EKAlarm alarmWithRelativeOffset:60.0f *-60.0f*24]];
 //    [event addAlarm:[EKAlarm alarmWithRelativeOffset:60.0f]];
     
-    [event addAlarm:[EKAlarm alarmWithAbsoluteDate:[temp dateFromString:@"2017.09.14 14:50"]]];
+    [event addAlarm:[EKAlarm alarmWithAbsoluteDate:[temp dateFromString:@"2017.09.14 18:05"]]];
     
     // 设置事件日历//https://itunes.apple.com/cn/app/huo-maotv-chao-qing-you-xidota2lol/id966104279?mt=8
-    NSString *str = [NSString stringWithFormat:@"http://huomaoiphone://?cid=8547&type=1&screenType=2"];
+    NSString *str = [NSString stringWithFormat:@"huomaoiphone://?cid=8547&type=1&screenType=2"];
     str = [str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     [event setURL:[NSURL URLWithString:str]];
     [event setCalendar:[[EventStore shareManager] defaultCalendarForNewEvents]];
