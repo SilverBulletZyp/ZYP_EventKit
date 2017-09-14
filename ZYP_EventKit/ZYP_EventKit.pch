@@ -18,6 +18,7 @@
 //#define MAS_SHORTHAND_GLOBALS
 #import "Masonry.h"
 
+#import "iConsole.h"
 
 // 主角 - 系统事件 (同时导入 EventKit.framework)
 #import <EventKit/EventKit.h>

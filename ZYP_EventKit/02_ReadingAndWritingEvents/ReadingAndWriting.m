@@ -20,17 +20,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // MARK: 一、连接日历数据库对象
     
-    // 1.plist 添加 NSCalendarsUsageDescription 允许
     
-    // 2.创建连接日历数据库的对象 - 单例
-    
-
-    
+    [self getCalendarSource];
+//    [self setAndGetCalendarSource];
+    [self setupEvent];
     
     
 }
+
+#pragma mark - 获取事件存储对象
+
+- (void)getEventStore {
+    
+    // MARK: 连接日历数据库对象
+    
+    // 1.plist 添加 NSCalendarsUsageDescription 允许
+    
+    // 2.创建连接日历数据库的对象 - 单例创建
+}
+
+
 
 #pragma mark - 获取日历数据库
 
@@ -40,6 +50,12 @@
     // 1.获取适当日历
     self.calendar = [NSCalendar currentCalendar];
     
+}
+
+#pragma mark - 设置并获取日历源
+
+- (void)setAndGetCalendarSource {
+
     // 2.创建开始日期组件
     NSDateComponents *startComponents = [[NSDateComponents alloc]init];
     startComponents.day = -1;
@@ -60,6 +76,7 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         NSArray *events = [[EventStore shareManager] eventsMatchingPredicate:predicate];
         NSLog(@"获取事件 - %@",events);
+        [iConsole info:@"%@",events];
     });
     
     NSLog(@"查看所有日历源 - %@",[EventStore shareManager].sources);
@@ -67,6 +84,7 @@
 
 
 #pragma mark - 使用唯一标示符获取事件
+
 - (void)getEventWithIdentifier {
     
     // 情况1.已知唯一标识符
@@ -80,6 +98,54 @@
 #pragma mark - 创建和编辑事件
 
 - (void)setupEvent {
+    
+    
+    EKEvent *event = [EKEvent eventWithEventStore:[EventStore shareManager]];
+    event.title = @"EDG VS RNG 火热进行中";// 英雄联盟世界半决赛正式开赛
+    event.notes = @"火猫直播现在开赛";//EDG VS RNG 18:00开赛
+//    event.location = @"火猫直播";//上海浦东新区东方体育中心/
+    NSDateFormatter *temp = [[NSDateFormatter alloc]init];
+    [temp setDateFormat:@"yyyy.MM.dd HH:mm"];
+    event.startDate = [[NSDate alloc]init];
+    event.endDate = [[NSDate alloc]init];
+    
+//    NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+//    [formatter setDateFormat:@"yyyy-MM dd:HH:mm"];
+//    event.startDate = [formatter dateFromString:@"2017-09-14 13:52:00"];
+//    event.endDate = [formatter dateFromString:@"2017-09-14 14:30:00"];
+    event.allDay = NO;
+    
+    // EKCalendarItem
+//    [event addAlarm:[EKAlarm alarmWithRelativeOffset:60.0f *-60.0f*24]];
+//    [event addAlarm:[EKAlarm alarmWithRelativeOffset:60.0f]];
+    
+    [event addAlarm:[EKAlarm alarmWithAbsoluteDate:[temp dateFromString:@"2017.09.14 14:50"]]];
+    
+    // 设置事件日历//https://itunes.apple.com/cn/app/huo-maotv-chao-qing-you-xidota2lol/id966104279?mt=8
+    NSString *str = [NSString stringWithFormat:@"http://huomaoiphone://?cid=8547&type=1&screenType=2"];
+    str = [str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    [event setURL:[NSURL URLWithString:str]];
+    [event setCalendar:[[EventStore shareManager] defaultCalendarForNewEvents]];
+    NSError *err;
+    [[EventStore shareManager]saveEvent:event span:EKSpanThisEvent error:&err];
+    [iConsole info:@"添加成功"];
+    
+    
+    /** 
+     
+        向日历添加一个事件
+            
+        title - 事件标题
+        notes - 事件备注
+        location - 事件地址
+        startDate - 开始日期
+        endDate - 结束日期
+        alarms - 闹钟
+        availability - 事件调度
+     
+     */
+    
+
     
 }
 

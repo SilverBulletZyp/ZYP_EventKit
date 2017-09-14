@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<iConsoleDelegate>
 
 @end
 
@@ -54,11 +54,30 @@
     NSArray *array = @[@{@"name":@"01 框架简介",@"vc":@"IntroductionVC"},
                        @{@"name":@"02 阅读和写作日历活动",@"vc":@"ReadingAndWriting"},];
     ZYPNavigationController *nav = [[ZYPNavigationController alloc]initWithTitle:@"系统事件库" vcArray:array];
+    self.window = [[iConsoleWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+   
+    [iConsole sharedConsole].delegate = self;
+    [iConsole sharedConsole].simulatorTouchesToShow = YES;
+//    [iConsole show];
     
     return YES;
 }
 
+- (void)handleConsoleCommand:(NSString *)command
+{
+    if ([command isEqualToString:@"version"])
+    {
+        [iConsole info:@"%@ version %@",
+         [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"],
+         [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]];
+    }
+    else
+    {
+        [iConsole error:@"unrecognised command, try 'version' instead"];
+    }
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

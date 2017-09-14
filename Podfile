@@ -31,5 +31,6 @@ pod 'YYModel', '~> 1.0.4'
 
 ## Debug ##
 # pod 'CocoaLumberjack' # DDLog
+pod 'iConsole' # debug显示于界面内
 
 end
