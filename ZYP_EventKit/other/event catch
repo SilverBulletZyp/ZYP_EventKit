@@ -1,0 +1,76 @@
+EKEvent <0x17013fae0>
+{
+	EKEvent <0x17013fae0>
+	{	 
+		title = 		EDG VS RNG 火热进行中; 
+		location = 	上海浦东新区东方体育中心/火猫直播; 
+		calendar = 	EKCalendar <0x1700bd280> 
+		{
+			title = 火猫直播 - 本地; 
+			type = Local; 
+			allowsModify = YES; 
+			color = #00ff00;
+		}; 
+		alarms = 		<__NSArrayM 0x1702410b0>
+		(
+			EKAlarm <0x1740ce3f0> 
+			{
+				triggerDate = 2017-09-14 10:05:00 +0000
+			}
+		); 
+		URL = 			huomaoiphone://?cid=8547&type=1&screenType=2; 
+		lastModified = 2017-09-15 07:31:15 +0000; 
+		startTimeZone = 	Asia/Shanghai (GMT+8) offset 28800; 
+		startTimeZone = 	Asia/Shanghai (GMT+8) offset 28800 
+	}; 
+	location = 	上海浦东新区东方体育中心/火猫直播; 
+	structuredLocation = 	EKStructuredLocation <0x1740bc2c0> 
+	{
+		title = 上海浦东新区东方体育中心/火猫直播; 
+		address = (null); 
+		geo = (null); 
+		abID = (null); 
+		routing = (null); 
+		radius = 0.000000;
+	}; 
+	startDate = 	2017-09-15 07:31:15 +0000; 
+	endDate = 		2017-09-15 07:31:15 +0000; 
+	allDay = 		0; 
+	floating = 	0; 
+	recurrence = 	(null); 
+	attendees = 	(null); 
+	travelTime = 	(null); 
+	startLocation = 	(null);
+};,
+
+
+EKEvent <0x170320fa0>
+{
+	EKEvent <0x170320fa0>
+	{	 
+		title = 		秋分; 
+		location = 	; 
+		calendar = 	EKCalendar <0x1700bd3a0> 
+		{
+			title = 中国节假日; 
+			type = Subscription; 
+			allowsModify = NO; 
+			color = #63DA38;
+		}; 
+		alarms = 		(null); 
+		URL = 			(null); 
+		lastModified = 2016-04-22 00:00:48 +0000; 
+		startTimeZone = 	(null); 
+		startTimeZone = 	(null) 
+	}; 
+	location = 	; 
+	structuredLocation = 	(null); 
+	startDate = 	2017-09-22 16:00:00 +0000; 
+	endDate = 		2017-09-23 15:59:59 +0000; 
+	allDay = 		1; 
+	floating = 	1; 
+	recurrence = 	(null); 
+	attendees = 	(null); 
+	travelTime = 	(null); 
+	startLocation = 	(null);
+};,
