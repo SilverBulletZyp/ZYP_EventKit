@@ -21,13 +21,82 @@
     [super viewDidLoad];
     
     
+    UIButton *btn1 = ({
+        btn1 = [[UIButton alloc]init];
+        btn1.backgroundColor = [UIColor orangeColor];
+        [btn1 setTitle:@"获取日历数据库" forState:UIControlStateNormal];
+        [btn1 addTarget:self action:@selector(onClickBtn1:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:btn1];
+        btn1;
+    });
     
-    [self getCalendarSource];
-//    [self setAndGetCalendarSource];
-    [self setupEvent];
+    UIButton *btn2 = ({
+        btn2 = [[UIButton alloc]init];
+        btn2.backgroundColor = [UIColor orangeColor];
+        [btn2 setTitle:@"设置并获取日历源" forState:UIControlStateNormal];
+        [btn2 addTarget:self action:@selector(onClickBtn2:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:btn2];
+        btn2;
+    });
     
+    UIButton *btn3 = ({
+        btn3 = [[UIButton alloc]init];
+        btn3.backgroundColor = [UIColor orangeColor];
+        [btn3 setTitle:@"创建和编辑事件" forState:UIControlStateNormal];
+        [btn3 addTarget:self action:@selector(onClickBtn3:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:btn3];
+        btn3;
+    });
+    
+    UIButton *btn4 = ({
+        btn4 = [[UIButton alloc]init];
+        btn4.backgroundColor = [UIColor orangeColor];
+        [btn4 setTitle:@"查询与删除事件" forState:UIControlStateNormal];
+        [btn4 addTarget:self action:@selector(onClickBtn4:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:btn4];
+        btn4;
+    });
+    
+
+    NSMutableArray *arr = [[NSMutableArray alloc]init];
+    [arr addObject:btn1];
+    [arr addObject:btn2];
+    [arr addObject:btn3];
+    
+    [arr mas_distributeViewsAlongAxis:MASAxisTypeVertical
+                           withFixedSpacing:40
+                                leadSpacing:100
+                                tailSpacing:360];
+    [arr mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.width.mas_equalTo(180);
+    }];
     
 }
+
+- (void)onClickBtn1:(UIButton *)button {
+    [self getCalendarSource];
+    [iConsole info:@"获取日历数据库成功!"];
+}
+
+- (void)onClickBtn2:(UIButton *)button {
+    [self setAndGetCalendarSource:^(BOOL success) {
+        if (success == YES) {
+            [iConsole info:@"设置并获取日历源成功!"];
+        }
+    }];
+}
+
+- (void)onClickBtn3:(UIButton *)button {
+    [self setupEvent];
+    [iConsole info:@"创建和编辑事件成功!"];
+}
+
+- (void)onClickBtn4:(UIButton *)button {
+    [self getCalendarSource];
+    [iConsole info:@"获取日历数据库成功!"];
+}
+
 
 #pragma mark - 获取事件存储对象
 
@@ -54,7 +123,7 @@
 
 #pragma mark - 设置并获取日历源
 
-- (void)setAndGetCalendarSource {
+- (void)setAndGetCalendarSource:(void(^)(BOOL success))callback {
 
     // 2.创建开始日期组件
     NSDateComponents *startComponents = [[NSDateComponents alloc]init];
@@ -76,7 +145,7 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         NSArray *events = [[EventStore shareManager] eventsMatchingPredicate:predicate];
         NSLog(@"获取事件 - %@",events);
-        [iConsole info:@"%@",events];
+        callback(YES);
     });
     
     NSLog(@"查看所有日历源 - %@",[EventStore shareManager].sources);
@@ -115,13 +184,13 @@
 //    event.endDate = [formatter dateFromString:@"2017-09-14 14:30:00"];
     event.allDay = NO;
     
-    // EKCalendarItem
+    
 //    [event addAlarm:[EKAlarm alarmWithRelativeOffset:60.0f *-60.0f*24]];
 //    [event addAlarm:[EKAlarm alarmWithRelativeOffset:60.0f]];
     
     [event addAlarm:[EKAlarm alarmWithAbsoluteDate:[temp dateFromString:@"2017.09.14 18:05"]]];
     
-    // 设置事件日历//https://itunes.apple.com/cn/app/huo-maotv-chao-qing-you-xidota2lol/id966104279?mt=8
+    
     NSString *str = [NSString stringWithFormat:@"huomaoiphone://?cid=8547&type=1&screenType=2"];
     str = [str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     [event setURL:[NSURL URLWithString:str]];
