@@ -20,7 +20,6 @@
     // 权限获取
     // EKEntityTypeEvent日历事件 ,   EKEntityTypeReminder提醒事项
     
-    
     //获取授权状态
     EKAuthorizationStatus eventStatus = [EventStore authorizationStatusForEntityType:EKEntityTypeEvent];
     if (eventStatus ==EKAuthorizationStatusNotDetermined) {

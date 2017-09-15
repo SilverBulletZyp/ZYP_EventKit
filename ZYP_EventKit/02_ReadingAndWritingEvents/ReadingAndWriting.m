@@ -241,6 +241,13 @@
         if (source.sourceType == EKSourceTypeLocal && [source.title isEqualToString:@"Default"]) {
             NSLog(@"无iCloud的情况下 - 本地日历源准备创建日历");
             localSource = source;
+            NSSet *set = [source calendarsForEntityType:EKEntityTypeEvent];
+            for (EKCalendar *ekCal in set) {
+                if ([ekCal.title isEqualToString:@"火猫直播 - 本地"]) {
+                    self.ekCalendar = ekCal;
+                    return;
+                }
+            }
             break;
         }
     }
@@ -582,7 +589,10 @@
 
 
 
-
+// 完成内容
+// 获取iCloud或本地日历源
+// 由日历源创建单一日历
+// 对单一日历添加事件 - 事件支持直播间跳转
 
 
 
