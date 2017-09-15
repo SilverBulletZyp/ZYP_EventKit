@@ -28,14 +28,8 @@
     2.使用EventKit对日历项进行的更改将自动同步到关联的日历(CalDAV，Exchange等)
  
     
-    1.事件库 -> 直接操作日历数据库
-    2.事件源 ->
-    3.日历
-    4.事件提醒
- 
-    
     数据库:
-    日历数据库 - 保存日历和提醒信息
+    日历数据库 - 保存日历源的日历和提醒信息
     
     注:
     1.iOS 10.0 以上 plist 文件需添加 NSRemindersUsageDescription 和 NSCalendarsUsageDescription

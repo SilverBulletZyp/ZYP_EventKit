@@ -473,7 +473,7 @@ static void exceptionHandler(NSException *exception)
         _simulatorShakeToShow = YES;
         _deviceShakeToShow = YES;
         
-        self.infoString = @"iConsole: Copyright © 2010 Charcoal Design";
+        self.infoString = @"iConsole: zyp Design";
         self.inputPlaceholderString = @"Enter command...";
         self.logSubmissionEmail = nil;
         

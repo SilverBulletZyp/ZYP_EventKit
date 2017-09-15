@@ -59,7 +59,8 @@
     [self.window makeKeyAndVisible];
    
     [iConsole sharedConsole].delegate = self;
-    [iConsole sharedConsole].simulatorTouchesToShow = YES;
+//    [iConsole sharedConsole].simulatorTouchesToShow = YES;
+    [iConsole clear];
 //    [iConsole show];
     
     return YES;
