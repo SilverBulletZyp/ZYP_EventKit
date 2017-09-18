@@ -279,6 +279,7 @@
     NSDate *endDate = [self.calendar dateByAddingComponents:endComponents
                                                      toDate:[NSDate date] options:0];
     
+    
     // 3.从事件存储实例方法创建谓词
     NSPredicate *predicate = [[EventStore shareManager] predicateForEventsWithStartDate:startDate endDate:endDate calendars:nil];
     

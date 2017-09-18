@@ -17,7 +17,7 @@ pod 'Masonry' # 轻量级布局框架
 
 ## YYkit ##
 # pod 'YYText', '~> 1.0.7'
-# pod 'YYCache', '~> 1.0.4'
+pod 'YYCache', '~> 1.0.4'
 pod 'YYModel', '~> 1.0.4'
 # pod 'YYImage', '~> 1.0.4'
 # pod 'YYWebImage', '~> 1.0.5'

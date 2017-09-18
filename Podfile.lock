@@ -1,21 +1,24 @@
 PODS:
   - iConsole (1.5.3)
   - Masonry (1.0.2)
+  - YYCache (1.0.4)
   - YYModel (1.0.4)
   - ZYP_HomeViewController (1.0.5)
 
 DEPENDENCIES:
   - iConsole
   - Masonry
+  - YYCache (~> 1.0.4)
   - YYModel (~> 1.0.4)
   - ZYP_HomeViewController (= 1.0.5)
 
 SPEC CHECKSUMS:
   iConsole: 823d9b14ac90f0a2a4fc9bf6a973a03ba9c4c7eb
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   ZYP_HomeViewController: f4d8d47efc06c93a6518e180bd6f420224020c44
 
-PODFILE CHECKSUM: 0f28630bd580bbe4fd0934509f1405ebbe189dd1
+PODFILE CHECKSUM: e2513cac35cce614026a8d66a8e67ceeb17d2fa4
 
 COCOAPODS: 1.2.1.beta.1
